@@ -25,4 +25,10 @@ class Song
     @@artists.each{|artist| unique << artist if !unique.include?(artist) }
     unique
   end
+
+  def self.genres
+    unique = []
+    @@genres.each{|genre| unique << genre if !unique.include?(genre) }
+    unique
+  end
 end
