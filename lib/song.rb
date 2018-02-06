@@ -20,4 +20,8 @@ class Song
     @@count
   end
 
+  def self.artists
+    unique = []
+    @@artists.each{|artist| unique << artist if !unique.include?(artist) }
+    unique
 end
