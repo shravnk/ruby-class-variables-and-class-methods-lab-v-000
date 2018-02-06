@@ -24,4 +24,5 @@ class Song
     unique = []
     @@artists.each{|artist| unique << artist if !unique.include?(artist) }
     unique
+  end
 end
